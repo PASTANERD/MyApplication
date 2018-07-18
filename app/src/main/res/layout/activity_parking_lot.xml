@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingLot">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lotindex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#92e1d5"
+                    android:text="1번" />
+
+
+                <EditText
+                    android:id="@+id/edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="차종입력"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="차번입력"
+                    android:inputType="numberSigned" />
+
+                <Button
+                    android:id="@+id/getin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onInOut"
+                    android:text="입차" />
+
+                <Button
+                    android:id="@+id/getout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onInOut"
+                    android:enabled="false"
+                    android:text="출차" />
+
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fefceeb2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/carname1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차종류 :" />
+
+                    <TextView
+                        android:id="@+id/carnumber1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차번호 : " />
+
+
+                    <TextView
+                        android:id="@+id/cartime1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="입차시간 :" />
+
+                    <Button
+                        android:id="@+id/choose1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSelect"
+                        android:text="선택" />
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                    android:layout_weight="1"
+                android:background="#feb6fcb2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/carname2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="차종류 :" />
+
+                <TextView
+                    android:id="@+id/carnumber2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="차번호 : " />
+
+
+                <TextView
+                    android:id="@+id/cartime2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="입차시간 :" />
+
+                <Button
+                    android:id="@+id/choose2"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSelect"
+                    android:text="선택" />
+            </LinearLayout>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#feb2b7fc"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/carname3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차종류 :" />
+
+                    <TextView
+                        android:id="@+id/carnumber3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차번호 : " />
+
+
+                    <TextView
+                        android:id="@+id/cartime3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="입차시간 :" />
+
+                    <Button
+                        android:id="@+id/choose3"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSelect"
+                        android:text="선택" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fefcb2d5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/carname4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차종류 :" />
+
+                    <TextView
+                        android:id="@+id/carnumber4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차번호 : " />
+
+
+                    <TextView
+                        android:id="@+id/cartime4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="입차시간 :" />
+
+                    <Button
+                        android:id="@+id/choose4"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSelect"
+                        android:text="선택" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

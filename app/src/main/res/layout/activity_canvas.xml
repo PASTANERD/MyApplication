@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CanvasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="#ff0000"
+            android:id="@+id/img1"
+            android:onClick="onImageClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/spaghetti" />
+
+        <ImageView
+            android:background="#00ff00"
+            android:id="@+id/img2"
+            android:onClick="onImageClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chicken" />
+
+        <ImageView
+            android:background="#0000ff"
+            android:id="@+id/img3"
+            android:onClick="onImageClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bears" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:background="#399283"
+            android:onClick="onImageClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+
+    <com.example.a0xbistrot.myapplication.MyCanvas
+        android:background="#baa1ff"
+        android:id="@+id/javacanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
